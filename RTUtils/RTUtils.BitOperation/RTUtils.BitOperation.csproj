@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryImage.cs" />
     <Compile Include="BitOperation.cs" />
     <Compile Include="ByteImage.cs" />
     <Compile Include="ByteImageDictionary.cs" />

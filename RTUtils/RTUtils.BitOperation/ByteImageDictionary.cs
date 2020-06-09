@@ -30,16 +30,12 @@ namespace RTUtils.BitOperation
 
         public Option<int> GetIndex(string name)
         {
-            try
+            if (NameToPositionMapping.ContainsKey(name))
             {
                 return NameToPositionMapping[name];
             }
-            catch (KeyNotFoundException e)
-            {
-                Console.WriteLine(e);
-                return Option<int>.None;
-            }
-            
+
+            return Option<int>.None;
         }
     }
 }

@@ -24,6 +24,17 @@ namespace RTUtils.BitOperationTests
         [Test]
         public void ByteImageDictionary_ctor_Test()
         {
+            var biDict = ByteImageDictionary.Create(
+                new Map("Prostate GTV", 0),
+                new Map("Urethra", 1)
+            );
+
+            Assert.AreNotEqual(null, biDict);
+        }
+
+        [Test]
+        public void ByteImageDictionary_Mapping_Test()
+        {
             string name = "Prostate GTV";
             var index = _biDict.GetIndex(name);
             Assert.AreEqual(0, index.IfNone(null));
