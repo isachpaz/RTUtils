@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package>
+  <metadata>
+    <id>RTUtils</id>
+    <version>1.0.0</version>
+    <title>RTUtils</title>
+    <authors>Uniklinik Freiburg, Germany</authors>
+    <owners>Ilias Sachpazidis</owners>
+    <projectUrl>https://www.website.com/project</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>RTUtils package</description>
+    <releaseNotes>Initial 1.0.0 release</releaseNotes>
+    <copyright>Copyright 2020 Ilias Sachpazidis</copyright>
+    <tags>sample nuget</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+      <dependency id="LanguageExt.Core" version="3.4.15"/>
+      </group>
+    </dependencies>
+    <summary> A summary of your package </summary>
+  </metadata>
+  <files>
+    <file src="RTUtils.BitOperation\bin\Release\RTUtils*.dll" target="lib\net461" />
+  </files>
+</package>
