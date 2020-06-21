@@ -12,13 +12,7 @@ namespace RTUtils.MiscTests
     [TestFixture]
     public class MatrixUtilTest
     {
-        [Test]
-        public void DecompressSequence_Empty_Input_Test()
-        {
-            var seq = MatrixUtil.DecompressSequence(null);
-            Assert.True(seq.ToList().Count == 0);
-        }
-
+        
         public IEnumerable<UInt32> GetUInt32Array(int start, int length)
         {
             foreach (var item in Enumerable.Range(start, length))
@@ -28,18 +22,19 @@ namespace RTUtils.MiscTests
         }
 
         [Test]
-        public void DecompressSequence_Input_Test()
+        public void Uncompress_Test()
         {
             var dataIn = GetUInt32Array(1000, 10000);
 
-            var compressedData = new CompressedResult(dataIn.ToArray(), 0.1234, 0.0 );
-            var range = Enumerable.Range(0, compressedData.Data.Length);
-            var seq = MatrixUtil.DecompressSequence(compressedData);
-            foreach (var item in seq.Zip(range,(d, i) => Tuple.Create(i,d)))
+            var compressedData = new CompressedData(dataIn.ToArray(), 0.00000023, 0.0 );
+            var converter = new ConvertDoubleToUInt32Array();
+            var array = converter.Uncompress(compressedData).ToList();
+
+            for (var i=0; i < array.Count; ++i)
             {
-                var int_value = compressedData.Data[item.Item1];
+                var int_value = compressedData.Data[i];
                 var double_value = int_value * compressedData.Scale + compressedData.Offset;
-                Assert.AreEqual(double_value, item.Item2);
+                Assert.AreEqual(double_value, array[i]);
             }
         }
     }
