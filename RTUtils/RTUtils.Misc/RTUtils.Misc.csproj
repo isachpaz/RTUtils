@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompressedResult.cs" />
-    <Compile Include="MatrixUtil.cs" />
+    <Compile Include="CompressedData.cs" />
+    <Compile Include="ConvertDoubleToUInt32Array.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
