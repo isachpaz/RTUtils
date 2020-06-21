@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RTUtils.Misc
 {
-    public static class MatrixUtil
+    public static class DataUtil
     {
         public static CompressedResult Compress(double[] data, double presicion)
         {
@@ -16,7 +16,7 @@ namespace RTUtils.Misc
 
         public static double[] Decompress(CompressedResult compressedData)
         {
-            return new double[1];
+            return DecompressSequence(compressedData).ToArray();
         }
 
         public static IEnumerable<double> DecompressSequence(CompressedResult compressed)
