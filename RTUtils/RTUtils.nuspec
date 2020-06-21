@@ -2,24 +2,35 @@
 <package>
   <metadata>
     <id>RTUtils</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>RTUtils</title>
-    <authors>Uniklinik Freiburg, Germany</authors>
+    <authors>Ilias Sachpazidis, Radiation Oncology Department, Division of Medical Physics, University Medical Centre Freiburg, Germany</authors>
     <owners>Ilias Sachpazidis</owners>
-    <projectUrl>https://www.website.com/project</projectUrl>
+    
+    <projectUrl>https://github.com/isachpaz/RTUtils</projectUrl>
+    <license type="file">LICENSE.txt</license>
+
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>RTUtils package</description>
-    <releaseNotes>Initial 1.0.0 release</releaseNotes>
+    <releaseNotes>
+      v1.0.0.1:
+      - ConvertDoubleToUInt32 / Data compress with a scale and offset
+      v1.0.0:
+      - Initial release
+    </releaseNotes>
     <copyright>Copyright 2020 Ilias Sachpazidis</copyright>
-    <tags>sample nuget</tags>
+    <tags>RTUtils, Convert Double array into UInt32</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.6.1">
       <dependency id="LanguageExt.Core" version="3.4.15"/>
       </group>
     </dependencies>
-    <summary> A summary of your package </summary>
+    <summary> </summary>
   </metadata>
   <files>
     <file src="RTUtils.BitOperation\bin\Release\RTUtils*.dll" target="lib\net461" />
+    <file src="RTUtils.Misc\bin\Release\RTUtils*.dll" target="lib\net461" />
+    <file src="LICENSE.txt" />
+
   </files>
 </package>
