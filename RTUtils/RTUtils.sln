@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		RTUtils.nuspec = RTUtils.nuspec
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTUtils.Misc", "RTUtils.Misc\RTUtils.Misc.csproj", "{13B847B9-756A-4588-8354-07DB66329AD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTUtils.MiscTests", "RTUtils.MiscTest\RTUtils.MiscTests.csproj", "{559CA8D3-E8B1-4F14-AFA1-3B5AFB76FC23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +30,14 @@ Global
 		{929BFEAF-BD48-4025-85D3-AE731408ED8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{929BFEAF-BD48-4025-85D3-AE731408ED8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{929BFEAF-BD48-4025-85D3-AE731408ED8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13B847B9-756A-4588-8354-07DB66329AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B847B9-756A-4588-8354-07DB66329AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B847B9-756A-4588-8354-07DB66329AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B847B9-756A-4588-8354-07DB66329AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{559CA8D3-E8B1-4F14-AFA1-3B5AFB76FC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559CA8D3-E8B1-4F14-AFA1-3B5AFB76FC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559CA8D3-E8B1-4F14-AFA1-3B5AFB76FC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{559CA8D3-E8B1-4F14-AFA1-3B5AFB76FC23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
