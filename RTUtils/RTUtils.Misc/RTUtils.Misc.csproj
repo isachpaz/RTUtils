@@ -41,13 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="CompressedData.cs" />
     <Compile Include="ConvertDoubleToUInt32Array.cs" />
-=======
-    <Compile Include="CompressedResult.cs" />
-    <Compile Include="DataUtil.cs" />
->>>>>>> master
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
