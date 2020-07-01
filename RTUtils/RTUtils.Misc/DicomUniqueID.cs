@@ -7,7 +7,7 @@ namespace RTUtils.Misc
     {
         public static string RootUID { get; set; }
 
-        public static string Generate(string name = "")
+        public static string Generate()
         {
             if (string.IsNullOrEmpty(RootUID))
             {
