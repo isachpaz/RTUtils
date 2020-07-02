@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>RTUtils</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>RTUtils</title>
     <authors>Ilias Sachpazidis, Radiation Oncology Department, Division of Medical Physics, University Medical Centre Freiburg, Germany</authors>
     <owners>Ilias Sachpazidis</owners>
@@ -13,6 +13,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>RTUtils package</description>
     <releaseNotes>
+      v1.0.3:
+      - DicomUniqeID generator derived from GUID added
       v1.0.2:
       - DicomUniqeID generator
       v1.0.1:

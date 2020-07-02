@@ -22,7 +22,7 @@ namespace RTUtils.MiscTests
         }
 
         [Test]
-        public void Generate_GenerateDerivedFromUUID_Test()
+        public void Generate_GenerateDerivedFromGUID_Test()
         {
             for (int i = 0; i < 100; i++)
             {
