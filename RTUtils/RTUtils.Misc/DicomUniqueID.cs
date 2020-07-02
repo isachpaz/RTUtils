@@ -22,6 +22,16 @@ namespace RTUtils.Misc
             return uid;
         }
 
+        public static string GenerateDerivedFromGUID()
+        {
+            var guid = Guid.NewGuid().ToByteArray();
+            var bigint = new System.Numerics.BigInteger(guid);
+            if (bigint < 0) bigint = -bigint;
+            var uid = "2.25." + bigint;
+
+            return uid;
+        }
+
 
     }
 }
